@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+    color: inherit;
+    text-decoration: inherit;
+}
+header{
+    background-color: #6F6F6F;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+header>a{
+    color: inherit;
+    text-decoration: inherit;
+}
+header input{
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    color: black;
+
+}
+body{
+    background-color: #979595;
+}
+.corpo{
+    display: grid;
+    grid-template-areas: "cont  cont"
+                         "textoinf forms";
+    justify-content: space-evenly;
+    align-items: center;
+}
+#text{
+    grid-area: textoinf;
+    margin-left:25px ;
+    font-size: 25px;
+
+}
+
+
+#formulario{
+    grid-area: forms;
+
+    
+}
+.input{
+    width: 98%;
+    height: 24px;
+    border-radius: 5px;
+}
+#cont{
+    grid-area: cont;
+    text-align: center;
+    font-size: 35px;
+    margin: 45px;
+}
+textarea{
+    resize: none;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+form{
+    background: #775555;
+    width: 30em;
+    height: 31em;
+    padding: 15px;
+}
+.butao{
+    width: 40%;
+    height: 25px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 120px;
+}
+
+
+
+footer{
+    background: #646464;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 15px;
+    height: 270px;
+    padding: 25px;
+    line-height: 2em;
+    text-align: left;
+    margin-top: 2em;
+    font-size: 15px;
+
+}
+footer h1 {
+    text-align: left;
+}
+@media only screen and (max-width: 900px){
+    header a, p{
+        font-size: 18px;
+    }
+}

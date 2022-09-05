@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+    color: inherit;
+    text-decoration: inherit;
+}
+body{
+    background: #979595;
+}
+
+header{
+    background-color: #6F6F6F;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+body{
+    background: #9A9A9A;
+}
+header>a{
+    color: inherit;
+    text-decoration: inherit;
+}
+header input{
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    color: black;
+
+}
+h1{
+    text-align: center;
+}
+
+footer h1 {
+    text-align: left;
+}
+
+body>div{
+    font-size: 25px;
+    display: grid;
+    grid-template-areas: "img1 texto1"
+                        "texto2 img2";
+     align-items: center;
+     justify-items: center;
+     padding: 30px;
+}
+
+.img1{
+    grid-area: img1;
+    background-image: url(img/livroqs.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30vw;
+    height: 20vw;
+}
+#img2p{
+    padding-top: 15px;
+}
+.tex1{
+    grid-area: texto1;
+}
+.tex2{
+    grid-area: texto2;
+}
+.img2{
+    grid-area: img2;
+}
+
+footer{
+    background: #646464;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 15px;
+    height: 270px;
+    padding: 25px;
+    line-height: 2em;
+    text-align: left;
+    margin-top: 2em;
+    font-size: 15px;
+
+}
+footer h1 {
+    text-align: left;
+}
+.marca{
+
+    padding-left: 15px;
+
+}
+.txt{
+    font-size: 27px;
+    text-align: left;
+}
+#titulo{
+    font-size: 40px;
+    color: #820000;
+    padding: 15px;
+}
+@media only screen and (max-width: 900px){
+    header a, p{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+    color: inherit;
+    text-decoration: inherit;
+}
+header{
+    background-color: #6F6F6F;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+header>a{
+    color: inherit;
+    text-decoration: inherit;
+}
+header input{
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    color: black;
+}
+
+aside{
+    height: 105vh;
+    width: 200px;
+    background: #473535;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+aside>a{
+    color: #fff;
+    margin-top: 50px;
+    padding: 2px;
+    font-size: 20px;
+    background: #726767;
+}
+main{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+main>div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+main>div>div{
+    width: 120px; 
+    height: 200px;
+    margin: 20px;
+    border-radius: 5px;
+}
+main img{
+    width: 100%;
+    height: calc(100% - 20px);
+}
+
+#ls{
+    text-decoration: underline;
+}
+footer{
+    background: #646464;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 270px;
+    padding: 25px;
+    line-height: 2em;
+    text-align: left;
+    font-size: 15px;
+}
+footer h1 {
+    text-align: left;
+}
