@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+    color: inherit;
+    text-decoration: inherit;
+}
+header{
+    background-color: #6F6F6F;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+header>a{
+    color: inherit;
+    text-decoration: inherit;
+}
+header input{
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    color: black;
+
+}
+main{
+    display: grid;
+    grid-template-areas: "anuncio1 anuncio2"
+                         "livros livros";
+    grid-template-columns: 10fr 9fr;
+    grid-template-rows: 300px 1fr;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    grid-area: livros;
+    padding: 100px;
+}
+section>div{
+    width: 120px; 
+    height: 200px;
+    margin: 20px;
+
+
+    border-radius: 5px;
+    overflow: hidden;
+}
+section img{
+    width: 100%;
+    height: calc(100% - 20px);
+}
+
+
+#azul{
+    background: #698B9C;
+    grid-area: anuncio1;
+    text-align: center;
+}
+#vermelho{
+    background: #A05A5E;
+    grid-area: anuncio2;    
+}
+.anuncio{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.anuncio h1{
+    font-size: 2.2em;
+    font-style: italic;
+    color: rgba(0, 0, 0, .6);
+    margin: 5px;
+}
+.anuncio p{
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+
+footer{
+    width: 100%;
+    background: #646464;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 270px;
+    padding: 25px;
+    line-height: 2em;
+    text-align: left;
+    font-size: 15px;
+
+}
+footer h1 {
+    text-align: left;
+}
